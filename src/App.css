@@ -69,7 +69,7 @@ body {
 
 .matches-section h2 {
   margin-bottom: 25px;
-  color: #ff9800;
+  color: #d97706;
 }
 
 .matches-section select {
@@ -130,4 +130,61 @@ body {
   .hero h1 {
     font-size: 27px;
   }
+}
+
+/* Responsive Match Cards */
+
+@media (max-width: 900px) {
+    .match-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .match-card {
+        width: 100%;
+    }
+}
+
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: #111a33;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
