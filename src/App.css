@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #111a33;
+}
+
+.navbar h2 {
+  color: #ff9800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #182b55, #101528);
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #111;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Match Section */
+.matches-section {
+  padding: 50px 8%;
+  text-align: center;
+}
+
+.matches-section h2 {
+  margin-bottom: 25px;
+  color: #ff9800;
+}
+
+.matches-section select {
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.match-card {
+  background: #172342;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ff9800;
+}
+
+.match-card h3 {
+  color: #ff9800;
+  margin-bottom: 15px;
+}
+
+.match-card p {
+  margin: 12px 0;
+  color: #ddd;
+}
+
+.match-card button {
+  background: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .match-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+}
